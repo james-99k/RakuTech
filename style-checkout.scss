@@ -1,0 +1,206 @@
+@import "style.scss";
+@import "style-accessories.scss";
+
+// <!-- tab -->
+.tab-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 30px 0;
+    border-bottom: 1px solid $spindle;
+    
+    &__product {
+        width: 600px;
+        margin-left: 50px;
+    }
+
+    &__price {
+        width: 100px;
+    }
+
+    &__quantity {
+        width: 100px;
+    }
+
+    &__unit-price {
+        width: 100px;
+    }
+}
+
+// <!-- checkout product -->
+.checkout-product {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 30px 0;
+    
+    &__product {
+        width: 600px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid $spindle;
+
+        &--delete {
+            font-size: 20px;
+            background: none;
+            border: none;
+
+            i {
+                color: #FF4252;
+            }
+        }
+
+        &--image {
+            height: 100px;
+            width: 150px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+
+    &__price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border-bottom: 1px solid $spindle;
+    }
+
+    &__quantity {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border-bottom: 1px solid $spindle;
+
+        &--button {
+            border-radius: 6px;
+            background: #cee5faf6;
+
+            .minus {
+                padding: 10px 10px;
+                height: 100%;
+                color: $dodgerBlue;
+
+                &:hover {
+                    cursor: pointer;
+                    background: $dodgerBlue;
+                    color: #cee5faf6;
+                    border-top-left-radius: 6px;
+                    border-bottom-left-radius: 6px;
+                }
+            }
+
+            .plus {
+                padding: 10px 10px;
+                height: 100%;
+                color: $dodgerBlue;
+
+                &:hover {
+                    cursor: pointer;
+                    background: $dodgerBlue;
+                    color: #cee5faf6;
+                    border-top-right-radius: 6px;
+                    border-bottom-right-radius: 6px;
+                }
+            }
+        }
+    }
+
+    &__unit-price {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100px;
+        border-bottom: 1px solid $spindle;
+    }
+}
+
+//     <!-- checkout -->
+.checkout-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 30px 150px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 50%;
+        margin-top: 20px;
+        padding: 30px 50px;
+
+        .bar {
+
+            input {
+                height: 40px;
+                width: 150px;
+                background: none;
+                border: 1px solid $spindle;
+                border-top-left-radius: 6px;
+                border-bottom-left-radius: 6px;
+                border-right: none;
+            }
+
+            button {
+                height: 40px;
+                width: 100px;
+                background: $dodgerBlue;
+                border: none;
+                border-top-right-radius: 6px;
+                border-bottom-right-radius: 6px;
+            }
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 50%;
+        margin-top: 20px;
+        padding: 30px 50px;
+
+        &--information {
+            display: flex;
+            flex-direction: column;
+
+            .subtotal, .shipping, .coupon, .total {
+                width: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px 0;
+
+                span {
+                    font-size: 14px;
+                }
+            }
+
+            .total {
+                border-top: 1px solid $spindle;
+
+                span {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+            }
+
+            .button {
+                padding: 10px 0;
+
+                button {
+                    width: 200px;
+                    height: 40px;
+                    background: $dodgerBlue;
+                    border: none;
+                    border-radius: 6px;
+                }
+            }
+        }
+    }
+}
